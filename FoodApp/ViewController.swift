@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tvMain: UITableView!
     var osama = 100
+    var osama2 = 100
+    var osama3 = 100
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
