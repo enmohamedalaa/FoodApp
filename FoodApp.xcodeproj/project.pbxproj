@@ -14,6 +14,7 @@
 		D93CF2A9242219580028EA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93CF2A7242219580028EA82 /* LaunchScreen.storyboard */; };
 		D93CF2B224224D3C0028EA82 /* CityHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CF2B024224D3C0028EA82 /* CityHeaderCell.swift */; };
 		D93CF2B324224D3C0028EA82 /* CityHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93CF2B124224D3C0028EA82 /* CityHeaderCell.xib */; };
+		D93CF2B5242253390028EA82 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CF2B4242253390028EA82 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D93CF2AA242219580028EA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93CF2B024224D3C0028EA82 /* CityHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHeaderCell.swift; sourceTree = "<group>"; };
 		D93CF2B124224D3C0028EA82 /* CityHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityHeaderCell.xib; sourceTree = "<group>"; };
+		D93CF2B4242253390028EA82 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				D93CF2B024224D3C0028EA82 /* CityHeaderCell.swift */,
 				D93CF2B124224D3C0028EA82 /* CityHeaderCell.xib */,
 				D93CF2A0242219500028EA82 /* ViewController.swift */,
+				D93CF2B4242253390028EA82 /* TableViewCell.swift */,
 				D93CF2A2242219500028EA82 /* Main.storyboard */,
 				D93CF2A5242219580028EA82 /* Assets.xcassets */,
 				D93CF2A7242219580028EA82 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D93CF2A1242219500028EA82 /* ViewController.swift in Sources */,
+				D93CF2B5242253390028EA82 /* TableViewCell.swift in Sources */,
 				D93CF29F242219500028EA82 /* AppDelegate.swift in Sources */,
 				D93CF2B224224D3C0028EA82 /* CityHeaderCell.swift in Sources */,
 			);
