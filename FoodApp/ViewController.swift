@@ -11,43 +11,58 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var tvMain: UITableView!
-    var osama = 100
-    var osama2 = 100
-    var osama3 = 100
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tvMain.dataSource = self
         tvMain.delegate = self
-        
-        tvMain.register(UINib(nibName: "CityHeaderCell", bundle: nil), forCellReuseIdentifier: "CityHeaderCell")
+        registerCell()
+
     }
-
-
+    
+    func registerCell(){
+        tvMain.registerHeaderNib(cellClass: CityHeaderCell.self)
+        tvMain.registerCellNib(cellClass: RestTypeCell.self)
+        tvMain.registerHeaderNib(cellClass: ResturantsHeaderCell.self)
+    }
+    
+    
 }
 
 extension ViewController: UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tvMain.dequeueReusableHeaderFooterView(withIdentifier: "CityHeaderCell")
-        return header
+        if (section == 0 ){
+            let header = tvMain.dequeueReusableHeaderFooterView(withIdentifier: "CityHeaderCell") as! CityHeaderCell
+            return header
+        } else {
+            let header = tvMain.dequeueReusableHeaderFooterView(withIdentifier: "ResturantsHeaderCell") as! ResturantsHeaderCell
+            return header
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 100
+        if (section == 0 ){
+            return 60
+        } else {
+            return 100
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tvMain.dequeue() as RestTypeCell
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
-    
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
 }
