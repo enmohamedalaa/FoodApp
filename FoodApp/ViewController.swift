@@ -33,6 +33,14 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate , UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 100
+        }else{
+            return 60
+        }
+    }
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if (section == 0 ){
             let header = tvMain.dequeueReusableHeaderFooterView(withIdentifier: "CityHeaderCell") as! CityHeaderCell
@@ -43,7 +51,7 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, minimumLineSpacing  section: Int) -> CGFloat {
         if (section == 0 ){
             return 60
         } else {
@@ -74,5 +82,13 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
         return 2
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if let header = tvMain.headerView(forSection: 0) {
+            let headeroffset = tvMain.rectForRow(at: IndexPath(row: 0, section: 0))
+            let mysecondoffset = headeroffset.origin.y
+            let offset = 1 - (scrollView.contentOffset.y / mysecondoffset)
+            header.alpha = offset
+        }
+    }
 }
 
