@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var tvMain: UITableView!
     
     override func viewDidLoad() {
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         tvMain.dataSource = self
         tvMain.delegate = self
         registerCell()
-
+        
     }
     
     func registerCell(){
@@ -72,7 +72,7 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-          return 1
+            return 1
         } else {
             return 5
         }
@@ -88,6 +88,19 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
             let mysecondoffset = headeroffset.origin.y
             let offset = 1 - (scrollView.contentOffset.y / mysecondoffset)
             header.alpha = offset
+        }
+        
+        if let header = tvMain.headerView(forSection: 1) as? ResturantsHeaderCell {
+            let headeroffset = tvMain.rectForHeader(inSection: 1)
+            let mysecondoffset = headeroffset.origin.y
+            let offset = 1 - (scrollView.contentOffset.y / mysecondoffset)
+            if offset <= 0 {
+                header.containerView.layer.mask = nil
+                tvMain.backgroundColor = .white
+            }else{
+                header.containerView.layer.mask = header.containerMask
+                tvMain.backgroundColor = .clear
+            }
         }
     }
 }
