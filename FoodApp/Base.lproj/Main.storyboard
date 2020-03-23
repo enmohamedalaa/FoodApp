@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jIK-wG-aL6">
-                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -33,7 +33,7 @@
                             <constraint firstItem="3py-Jq-LEb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G6Y-ey-IQ8"/>
                             <constraint firstItem="jIK-wG-aL6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lt3-Sa-GVU"/>
                             <constraint firstItem="jIK-wG-aL6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Uy4-05-Dis"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jIK-wG-aL6" secondAttribute="bottom" id="cLP-Ka-qUO"/>
+                            <constraint firstAttribute="bottom" secondItem="jIK-wG-aL6" secondAttribute="bottom" id="cLP-Ka-qUO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jIK-wG-aL6" secondAttribute="trailing" id="rXp-IP-BgK"/>
                             <constraint firstAttribute="bottom" secondItem="3py-Jq-LEb" secondAttribute="bottom" id="yAm-lM-oeh"/>
                         </constraints>

@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         tvMain.registerHeaderNib(cellClass: CityHeaderCell.self)
         tvMain.registerCellNib(cellClass: RestTypeCell.self)
         tvMain.registerHeaderNib(cellClass: ResturantsHeaderCell.self)
+        tvMain.registerCellNib(cellClass: ResturantCell.self)
     }
     
     
@@ -51,14 +52,22 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tvMain.dequeue() as RestTypeCell
+        if indexPath.section == 0 {
+            let cell = tvMain.dequeue() as RestTypeCell
+            return cell
+        } else {
+            let cell = tvMain.dequeue() as ResturantCell
+            return cell
+        }
         
-        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-        
+        if section == 0 {
+          return 1
+        } else {
+            return 5
+        }
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
