@@ -25,17 +25,27 @@
                                 <rect key="frame" x="0.0" y="69" width="414" height="827"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmb-ka-wHf" customClass="CustomTabBar" customModule="FoodApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="772" width="414" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="IJ5-ts-K8K"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3py-Jq-LEb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Pt-TA-Q8F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3py-Jq-LEb" secondAttribute="trailing" id="8gB-VQ-EAb"/>
+                            <constraint firstItem="fmb-ka-wHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AX2-oC-Aoe"/>
                             <constraint firstItem="3py-Jq-LEb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="G6Y-ey-IQ8"/>
                             <constraint firstItem="jIK-wG-aL6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Lt3-Sa-GVU"/>
                             <constraint firstItem="jIK-wG-aL6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="Uy4-05-Dis"/>
                             <constraint firstAttribute="bottom" secondItem="jIK-wG-aL6" secondAttribute="bottom" id="cLP-Ka-qUO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fmb-ka-wHf" secondAttribute="bottom" constant="10" id="hIj-FZ-9kA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jIK-wG-aL6" secondAttribute="trailing" id="rXp-IP-BgK"/>
                             <constraint firstAttribute="bottom" secondItem="3py-Jq-LEb" secondAttribute="bottom" id="yAm-lM-oeh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fmb-ka-wHf" secondAttribute="trailing" id="zL3-EY-bhc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

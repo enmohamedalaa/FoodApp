@@ -14,6 +14,8 @@
 		D909BC382423910200D7F885 /* RestCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D909BC362423910200D7F885 /* RestCollectionCell.xib */; };
 		D913E1F324279DC0007567B8 /* ResturantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D913E1F124279DC0007567B8 /* ResturantCell.swift */; };
 		D913E1F424279DC0007567B8 /* ResturantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D913E1F224279DC0007567B8 /* ResturantCell.xib */; };
+		D9148C74242A38FC0061C264 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9148C73242A38FC0061C264 /* CustomTabBar.swift */; };
+		D9148C77242A392A0061C264 /* CustomTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9148C76242A392A0061C264 /* CustomTabBar.xib */; };
 		D93CF29F242219500028EA82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CF29E242219500028EA82 /* AppDelegate.swift */; };
 		D93CF2A1242219500028EA82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CF2A0242219500028EA82 /* ViewController.swift */; };
 		D93CF2A4242219500028EA82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93CF2A2242219500028EA82 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		D909BC362423910200D7F885 /* RestCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestCollectionCell.xib; sourceTree = "<group>"; };
 		D913E1F124279DC0007567B8 /* ResturantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantCell.swift; sourceTree = "<group>"; };
 		D913E1F224279DC0007567B8 /* ResturantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResturantCell.xib; sourceTree = "<group>"; };
+		D9148C73242A38FC0061C264 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		D9148C76242A392A0061C264 /* CustomTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBar.xib; sourceTree = "<group>"; };
 		D93CF29B242219500028EA82 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93CF29E242219500028EA82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D93CF2A0242219500028EA82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,15 @@
 			path = ResturantCell;
 			sourceTree = "<group>";
 		};
+		D9148C75242A39060061C264 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D9148C73242A38FC0061C264 /* CustomTabBar.swift */,
+				D9148C76242A392A0061C264 /* CustomTabBar.xib */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
 		D93CF292242219500028EA82 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +155,7 @@
 				D909BC2C24237DDF00D7F885 /* Extension */,
 				D909BC2A24237D9500D7F885 /* TableCell */,
 				D909BC2B24237DB900D7F885 /* CollectionCell */,
+				D9148C75242A39060061C264 /* CustomTabBar */,
 				D93CF2A0242219500028EA82 /* ViewController.swift */,
 				D93CF2A2242219500028EA82 /* Main.storyboard */,
 				D93CF2A5242219580028EA82 /* Assets.xcassets */,
@@ -238,6 +252,7 @@
 			files = (
 				D9CC522F2426CBA10000C38E /* ResturantsHeaderCell.xib in Resources */,
 				D9ABBB2724293FD500E6789E /* CuisineCell.xib in Resources */,
+				D9148C77242A392A0061C264 /* CustomTabBar.xib in Resources */,
 				D909BC3424238C1500D7F885 /* RestTypeCell.xib in Resources */,
 				D913E1F424279DC0007567B8 /* ResturantCell.xib in Resources */,
 				D93CF2A9242219580028EA82 /* LaunchScreen.storyboard in Resources */,
@@ -258,6 +273,7 @@
 				D9CC522624269D4A0000C38E /* Inspectables.swift in Sources */,
 				D9CC522E2426CBA10000C38E /* ResturantsHeaderCell.swift in Sources */,
 				D93CF2A1242219500028EA82 /* ViewController.swift in Sources */,
+				D9148C74242A38FC0061C264 /* CustomTabBar.swift in Sources */,
 				D93CF29F242219500028EA82 /* AppDelegate.swift in Sources */,
 				D9ABBB2624293FD500E6789E /* CuisineCell.swift in Sources */,
 				D913E1F324279DC0007567B8 /* ResturantCell.swift in Sources */,
