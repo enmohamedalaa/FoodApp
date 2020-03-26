@@ -23,6 +23,7 @@
 		D93CF2A9242219580028EA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93CF2A7242219580028EA82 /* LaunchScreen.storyboard */; };
 		D93CF2B224224D3C0028EA82 /* CityHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CF2B024224D3C0028EA82 /* CityHeaderCell.swift */; };
 		D93CF2B324224D3C0028EA82 /* CityHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93CF2B124224D3C0028EA82 /* CityHeaderCell.xib */; };
+		D99C9276242C236C0013F0A4 /* AnimationsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C9275242C236C0013F0A4 /* AnimationsFactory.swift */; };
 		D9ABBB2624293FD500E6789E /* CuisineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABBB2424293FD500E6789E /* CuisineCell.swift */; };
 		D9ABBB2724293FD500E6789E /* CuisineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ABBB2524293FD500E6789E /* CuisineCell.xib */; };
 		D9CC522624269D4A0000C38E /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC522524269D4A0000C38E /* Inspectables.swift */; };
@@ -49,6 +50,7 @@
 		D93CF2AA242219580028EA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93CF2B024224D3C0028EA82 /* CityHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHeaderCell.swift; sourceTree = "<group>"; };
 		D93CF2B124224D3C0028EA82 /* CityHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityHeaderCell.xib; sourceTree = "<group>"; };
+		D99C9275242C236C0013F0A4 /* AnimationsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsFactory.swift; sourceTree = "<group>"; };
 		D9ABBB2424293FD500E6789E /* CuisineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineCell.swift; sourceTree = "<group>"; };
 		D9ABBB2524293FD500E6789E /* CuisineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CuisineCell.xib; sourceTree = "<group>"; };
 		D9CC522524269D4A0000C38E /* Inspectables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				D909BC2D242388B600D7F885 /* FileExtension.swift */,
 				D9CC522524269D4A0000C38E /* Inspectables.swift */,
+				D99C9275242C236C0013F0A4 /* AnimationsFactory.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				D913E1F324279DC0007567B8 /* ResturantCell.swift in Sources */,
 				D93CF2B224224D3C0028EA82 /* CityHeaderCell.swift in Sources */,
 				D909BC372423910200D7F885 /* RestCollectionCell.swift in Sources */,
+				D99C9276242C236C0013F0A4 /* AnimationsFactory.swift in Sources */,
 				D909BC3324238C1500D7F885 /* RestTypeCell.swift in Sources */,
 				D909BC2E242388B600D7F885 /* FileExtension.swift in Sources */,
 			);
