@@ -8,7 +8,18 @@
 
 import UIKit
 
+protocol CustomTabBarDelegate: class{
+    func didPressOnButton(type: CustomTabBar.CustomTabBarButtons)
+}
+
 class CustomTabBar: UIView {
+    
+    enum CustomTabBarButtons: Int {
+        case home
+        case profile
+    }
+    
+    weak var delegate: CustomTabBarDelegate?
     
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var lineLeading: NSLayoutConstraint!
@@ -29,6 +40,7 @@ class CustomTabBar: UIView {
     }
     
     @IBAction func btnHome(_ sender: UIButton) {
+        delegate?.didPressOnButton(type: .home)
         UIView.animate(withDuration: 0.8) {
             self.lineLeading.constant = sender.frame.origin.x - (sender.frame.width / 2)
             AnimationsFactory.animate(sender, animationType: .glow(from: 0.2, duration: 10))
@@ -38,6 +50,7 @@ class CustomTabBar: UIView {
     }
     
     @IBAction func btnProfile(_ sender: UIButton) {
+        delegate?.didPressOnButton(type: .profile)
         UIView.animate(withDuration: 0.8) {
             self.lineLeading.constant = sender.frame.origin.x - (sender.frame.width / 2)
             AnimationsFactory.animate(sender, animationType: .glow(from: 0.2, duration: 10))

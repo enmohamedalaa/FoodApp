@@ -22,8 +22,16 @@ extension UITableView {
     
     func dequeue<Cell: UITableViewCell>() -> Cell{
         let identifier = String(describing: Cell.self)
-        
         guard let cell = self.dequeueReusableCell(withIdentifier: identifier) as? Cell else {
+            fatalError("Error in cell")
+        }
+        
+        return cell
+    }
+    
+    func dequeueHeader<Cell: UITableViewHeaderFooterView>() -> Cell{
+        let identifier = String(describing: Cell.self)
+        guard let cell = self.dequeueReusableHeaderFooterView(withIdentifier: identifier) as? Cell else {
             fatalError("Error in cell")
         }
         
@@ -41,8 +49,6 @@ extension UICollectionView {
     
     func dequeue<Cell: UICollectionViewCell>(indexPath: IndexPath) -> Cell{
         let identifier = String(describing: Cell.self)
-        
-        
         guard let cell = self.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as? Cell else {
             fatalError("Error in cell")
         }
