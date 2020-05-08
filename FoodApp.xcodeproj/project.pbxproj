@@ -24,6 +24,10 @@
 		D93CF2A9242219580028EA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93CF2A7242219580028EA82 /* LaunchScreen.storyboard */; };
 		D93CF2B224224D3C0028EA82 /* CityHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93CF2B024224D3C0028EA82 /* CityHeaderCell.swift */; };
 		D93CF2B324224D3C0028EA82 /* CityHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93CF2B124224D3C0028EA82 /* CityHeaderCell.xib */; };
+		D93F05BD245EEB110020AD04 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F05BB245EEB110020AD04 /* FoodCell.swift */; };
+		D93F05BE245EEB110020AD04 /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93F05BC245EEB110020AD04 /* FoodCell.xib */; };
+		D93F05C3245EF1180020AD04 /* QuantityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93F05C2245EF1180020AD04 /* QuantityView.xib */; };
+		D93F05C5245EF3120020AD04 /* QuantityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93F05C4245EF3120020AD04 /* QuantityView.swift */; };
 		D992AC0D245C512400061DC7 /* ResturantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D992AC0C245C512400061DC7 /* ResturantViewController.swift */; };
 		D99C9276242C236C0013F0A4 /* AnimationsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99C9275242C236C0013F0A4 /* AnimationsFactory.swift */; };
 		D9ABBB2624293FD500E6789E /* CuisineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABBB2424293FD500E6789E /* CuisineCell.swift */; };
@@ -55,6 +59,10 @@
 		D93CF2AA242219580028EA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D93CF2B024224D3C0028EA82 /* CityHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHeaderCell.swift; sourceTree = "<group>"; };
 		D93CF2B124224D3C0028EA82 /* CityHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityHeaderCell.xib; sourceTree = "<group>"; };
+		D93F05BB245EEB110020AD04 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		D93F05BC245EEB110020AD04 /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
+		D93F05C2245EF1180020AD04 /* QuantityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuantityView.xib; sourceTree = "<group>"; };
+		D93F05C4245EF3120020AD04 /* QuantityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityView.swift; sourceTree = "<group>"; };
 		D992AC0C245C512400061DC7 /* ResturantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantViewController.swift; sourceTree = "<group>"; };
 		D99C9275242C236C0013F0A4 /* AnimationsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsFactory.swift; sourceTree = "<group>"; };
 		D9ABBB2424293FD500E6789E /* CuisineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisineCell.swift; sourceTree = "<group>"; };
@@ -85,6 +93,7 @@
 				D9CC522B2426CADD0000C38E /* ResturantsHeader */,
 				D913E1F524279DCD007567B8 /* ResturantCell */,
 				D9C5E41E245CEAE300D1CCD9 /* RestDetailsHeaderCell */,
+				D93F05BA245EEADF0020AD04 /* FoodCell */,
 			);
 			path = TableCell;
 			sourceTree = "<group>";
@@ -168,6 +177,7 @@
 				D909BC2A24237D9500D7F885 /* TableCell */,
 				D909BC2B24237DB900D7F885 /* CollectionCell */,
 				D9148C75242A39060061C264 /* CustomTabBar */,
+				D93F05BF245EF0EA0020AD04 /* QuantityView */,
 				D93CF2A0242219500028EA82 /* ViewController.swift */,
 				D913614D242CC595009849D5 /* ViewController+Delegate.swift */,
 				D992AC0C245C512400061DC7 /* ResturantViewController.swift */,
@@ -177,6 +187,24 @@
 				D93CF2AA242219580028EA82 /* Info.plist */,
 			);
 			path = FoodApp;
+			sourceTree = "<group>";
+		};
+		D93F05BA245EEADF0020AD04 /* FoodCell */ = {
+			isa = PBXGroup;
+			children = (
+				D93F05BB245EEB110020AD04 /* FoodCell.swift */,
+				D93F05BC245EEB110020AD04 /* FoodCell.xib */,
+			);
+			path = FoodCell;
+			sourceTree = "<group>";
+		};
+		D93F05BF245EF0EA0020AD04 /* QuantityView */ = {
+			isa = PBXGroup;
+			children = (
+				D93F05C2245EF1180020AD04 /* QuantityView.xib */,
+				D93F05C4245EF3120020AD04 /* QuantityView.swift */,
+			);
+			path = QuantityView;
 			sourceTree = "<group>";
 		};
 		D9ABBB2824293FDB00E6789E /* CuisineCell */ = {
@@ -273,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D93F05C3245EF1180020AD04 /* QuantityView.xib in Resources */,
 				D9CC522F2426CBA10000C38E /* ResturantsHeaderCell.xib in Resources */,
 				D9ABBB2724293FD500E6789E /* CuisineCell.xib in Resources */,
 				D9148C77242A392A0061C264 /* CustomTabBar.xib in Resources */,
@@ -282,6 +311,7 @@
 				D93CF2A9242219580028EA82 /* LaunchScreen.storyboard in Resources */,
 				D93CF2B324224D3C0028EA82 /* CityHeaderCell.xib in Resources */,
 				D93CF2A6242219580028EA82 /* Assets.xcassets in Resources */,
+				D93F05BE245EEB110020AD04 /* FoodCell.xib in Resources */,
 				D93CF2A4242219500028EA82 /* Main.storyboard in Resources */,
 				D909BC382423910200D7F885 /* RestCollectionCell.xib in Resources */,
 			);
@@ -295,12 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9CC522624269D4A0000C38E /* Inspectables.swift in Sources */,
+				D93F05BD245EEB110020AD04 /* FoodCell.swift in Sources */,
 				D9CC522E2426CBA10000C38E /* ResturantsHeaderCell.swift in Sources */,
 				D93CF2A1242219500028EA82 /* ViewController.swift in Sources */,
 				D9148C74242A38FC0061C264 /* CustomTabBar.swift in Sources */,
 				D93CF29F242219500028EA82 /* AppDelegate.swift in Sources */,
 				D992AC0D245C512400061DC7 /* ResturantViewController.swift in Sources */,
 				D9ABBB2624293FD500E6789E /* CuisineCell.swift in Sources */,
+				D93F05C5245EF3120020AD04 /* QuantityView.swift in Sources */,
 				D913E1F324279DC0007567B8 /* ResturantCell.swift in Sources */,
 				D93CF2B224224D3C0028EA82 /* CityHeaderCell.swift in Sources */,
 				D909BC372423910200D7F885 /* RestCollectionCell.swift in Sources */,

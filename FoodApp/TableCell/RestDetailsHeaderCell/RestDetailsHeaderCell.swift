@@ -14,7 +14,7 @@ class RestDetailsHeaderCell: UITableViewHeaderFooterView {
     
     @IBOutlet weak var cv: UICollectionView!
     
-    let items: [String] = ["Burger","American","A"]
+    let items: [String] = ["Burger","American","A","Burger","American","A"]
     override func awakeFromNib() {
         super.awakeFromNib()
         cv.dataSource = self
