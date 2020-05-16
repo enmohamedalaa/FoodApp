@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class RestCollectionCell: UICollectionViewCell {
     
@@ -23,6 +24,14 @@ class RestCollectionCell: UICollectionViewCell {
         self.layer.shadowOpacity = 0
         lblTitle.alpha = 0.6
         lblTitle.font = UIFont.systemFont(ofSize: 17, weight: .regular)
+    }
+    
+    func cofigure(_ data: CircleModel?) {
+        guard let model = data else { return }
+        self.lblTitle.text = model.title
+        if let imageURL = model.image {
+            self.restImg.kf.setImage(with: URL(string: imageURL))
+        }
     }
     
     override var isSelected: Bool{

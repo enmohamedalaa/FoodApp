@@ -22,6 +22,7 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if (section == 0 ){
             let header = tvMain.dequeueReusableHeaderFooterView(withIdentifier: "CityHeaderCell") as! CityHeaderCell
+            header.lblTitle.text = headerdata?.title
             return header
         } else {
             let header = tvMain.dequeueReusableHeaderFooterView(withIdentifier: "ResturantsHeaderCell") as! ResturantsHeaderCell
@@ -39,8 +40,11 @@ extension ViewController: UITableViewDelegate , UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
+        if (indexPath.section == 0) {
+            let item = self.headerdata?.types
             let cell = tvMain.dequeue() as RestTypeCell
+            cell.items = item
+            cell.cvRestaurant.reloadData()
             return cell
         } else {
             let cell = tvMain.dequeue() as ResturantCell
